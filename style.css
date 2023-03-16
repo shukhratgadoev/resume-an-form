@@ -1,0 +1,109 @@
+.container{
+    max-width: 1296px;
+    width: 100%;
+    margin: auto;
+}
+
+.contacts-title {
+    margin-bottom: 40px;
+}
+
+.contacts-title h1{
+    font-size: 34px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+.contacts-title h1 span{
+   color: rgb(22, 136, 254);
+}
+
+.contacts-title p{
+    color: rgb(113, 113, 166);
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.47;
+    text-align: center;
+}
+
+.form-wrap {
+    width: 100%;
+    max-width: 760px;
+    margin: auto;
+}
+
+.first-line, .location-line, .contacts-line{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.first-line .first-line-inner, .location-line .location-line-inner, .contacts-line .contacts-line-inner{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0 15px;
+}
+
+input{
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    width: 100%;
+    overflow: hidden;
+    color: rgb(72, 72, 112);
+    box-shadow: none;
+    height: 48px;
+    padding: 13px 16px;
+    border: 1px solid rgb(227, 227, 228);
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-sizing: border-box;
+    gap: 12px;
+}
+
+label{
+   margin-bottom: 15px;
+   display: inline-block;
+}
+
+.address-line{
+    margin-bottom: 30px;
+}
+
+.address-line .address-line-inner{
+    padding: 0 15px;
+}
+
+.form-btn{
+    padding-right: 15px;
+    display: flex;
+    justify-content: end;
+}
+
+.form-btn input{
+    background-color: #a30041;
+    color: #fff;
+    font-size: 16px;
+    max-width: 200px;
+}
+
+
+@media (max-width: 500px){
+    .contacts-title h1{
+        font-size: 24px;
+    }
+    .first-line, .location-line, .contacts-line{
+        flex-direction: column;
+    }
+    .first-line .first-line-inner, .location-line .location-line-inner, .contacts-line .contacts-line-inner{
+        width: initial;
+    }
+}
