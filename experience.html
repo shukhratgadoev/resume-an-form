@@ -1,75 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>experience</title>
-  </head>
-  <body>
-    <div class="contacts">
-      <div class="container">
-        <div class="contacts-wrap">
-          <div class="contacts-title">
-            <h1><span>Расскажите нам</span> о своем опыте</h1>
-            <p>
-              Это позволит работодателям узнать, как с вами можно связаться.
-            </p>
-          </div>
-          <div class="form-wrap">
-            <form action="">
-              <div class="first-line">
-                <div class="first-line-inner">
-                  <label for="job_title">Должность</label>
-                  <input type="text" id="job_title" />
-                </div>
-                <div class="first-line-inner">
-                  <label for="employer">Работодатель</label>
-                  <input type="text" id="employer" />
-                </div>
-              </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Опыт</title>
+	</head>
+	<body>
+		<div class="contacts">
+			<div class="container">
+				<div class="header-progress">
+					<div class="header-progress-line experience-line"></div>
+					<div class="header-item">
+						<div class="header-item-title">КОНТАКТЫ</div>
+						<div class="header-item-cicle cicrcle-blue"></div>
+					</div>
+					<div class="header-item">
+						<div class="header-item-title">ОПЫТ</div>
+						<div class="header-item-cicle cicrcle-blue"></div>
+					</div>
 
-              <div class="address-line-second-step">
-                <div class="second-line-inner">
-                  <div class="address-line-inner-date">
-                    <label for="start_date">Дата начала</label>
-                    <input type="date" id="start_date" />
-                  </div>
-                  <div class="address-line-inner-date">
-                    <label for="expiration_date">Дата окончания</label>
-                    <input type="date" id="expiration_date" />
-                  </div>
-                </div>
-                <div class="second-line-inner-city">
-                  <div class="address-line-inner-city">
-                    <label for="city_job">Город</label>
-                    <input type="text" id="city_job" />
-                  </div>
-                </div>
-              </div>
+					<div class="header-item">
+						<div class="header-item-title">ОБРАЗОВАНИЕ</div>
+						<div class="header-item-cicle"></div>
+					</div>
 
-              <div class="job-checkbox">
-                <input type="checkbox" id="vehicle1" name="vehicle1" />
-                <label for="vehicle1"> В настоящее время я работаю здесь</label>
-              </div>
+					<div class="header-item">
+						<div class="header-item-title">НАВЫКИ</div>
+						<div class="header-item-cicle"></div>
+					</div>
+					<div class="header-item">
+						<div class="header-item-title">ОБ</div>
+						<div class="header-item-cicle"></div>
+					</div>
+					<div class="header-item">
+						<div class="header-item-title">ЗАКОНЧИТЬ</div>
+						<div class="header-item-cicle"></div>
+					</div>
+				</div>
 
-              <div class="bottom-job-texarea">
-                <label for="description">Description</label>
-                <textarea
-                  name="description"
-                  id="description"
-                  cols="30"
-                  rows="10"
-                ></textarea>
-              </div>
-              <div class="form-btn">
-                <input type="submit" value="Перейти к Опыт" />
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+				<div class="contacts-wrap">
+					<div class="contacts-title">
+						<h1><span>Расскажите нам</span> о своем опыте</h1>
+
+						<div class="download-resume">
+							<p>Начните с вашей недавней работы</p>
+							<a href="#">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="17"
+									height="17"
+									viewBox="0 0 17 17"
+									fill="none"
+								>
+									<path
+										d="M14.5 10.5C14.2348 10.5 13.9804 10.6054 13.7929 10.7929C13.6054 10.9804 13.5 11.2348 13.5 11.5V13.5H3.5V11.5C3.5 11.2348 3.39464 10.9804 3.20711 10.7929C3.01957 10.6054 2.76522 10.5 2.5 10.5C2.23478 10.5 1.98043 10.6054 1.79289 10.7929C1.60536 10.9804 1.5 11.2348 1.5 11.5V13.5C1.5 14.0304 1.71071 14.5391 2.08579 14.9142C2.46086 15.2893 2.96957 15.5 3.5 15.5H13.5C14.0304 15.5 14.5391 15.2893 14.9142 14.9142C15.2893 14.5391 15.5 14.0304 15.5 13.5V11.5C15.5 11.2348 15.3946 10.9804 15.2071 10.7929C15.0196 10.6054 14.7652 10.5 14.5 10.5Z"
+										fill="#0B78E8"
+									></path>
+									<path
+										d="M5.20643 7.20679L7.49943 4.91379V10.4998C7.49943 10.765 7.60479 11.0194 7.79232 11.2069C7.97986 11.3944 8.23421 11.4998 8.49943 11.4998C8.76465 11.4998 9.019 11.3944 9.20654 11.2069C9.39407 11.0194 9.49943 10.765 9.49943 10.4998V4.91379L11.7924 7.20679C11.981 7.38894 12.2336 7.48974 12.4958 7.48746C12.758 7.48518 13.0088 7.38001 13.1942 7.1946C13.3797 7.0092 13.4848 6.75838 13.4871 6.49619C13.4894 6.23399 13.3886 5.98139 13.2064 5.79279L9.20643 1.79279C9.0189 1.60532 8.7646 1.5 8.49943 1.5C8.23427 1.5 7.97996 1.60532 7.79243 1.79279L3.79243 5.79279C3.61027 5.98139 3.50948 6.23399 3.51176 6.49619C3.51403 6.75838 3.6192 7.0092 3.80461 7.1946C3.99002 7.38001 4.24083 7.48518 4.50303 7.48746C4.76523 7.48974 5.01783 7.38894 5.20643 7.20679Z"
+										fill="#0B78E8"
+									></path>
+								</svg>
+								<span>Импорт существующего резюме</span>
+							</a>
+						</div>
+					</div>
+					<div class="form-wrap">
+						<form action="">
+							<div id="form_exp"></div>
+
+							<div class="add-exp-btn" id="add_exp">
+								<button class="add_btn">
+									<span>
+										<span>
+											<svg
+												viewBox="0 0 16 16"
+												xmlns="http://www.w3.org/2000/svg"
+												class="SvgIcon-sc-1pwrtuv-1 isBodP"
+											>
+												<g fill-rule="nonzero">
+													<path
+														xmlns="http://www.w3.org/2000/svg"
+														fill="#1688fe"
+														fill-rule="evenodd"
+														d="M8 0a8 8 0 110 16A8 8 0 018 0zm0 2a6 6 0 100 12A6 6 0 008 2zm1 2v3h3v2H9v3H7V9H4V7h3V4h2z"
+													></path>
+												</g>
+											</svg>
+										</span>
+										<span>Добавить работу</span>
+									</span>
+								</button>
+							</div>
+
+							<div class="form-btn">
+								<input type="submit" value="Перейти к Образование" />
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			let counter =+ 1;
+			let add_btn_handler = document.querySelector('.add_btn');
+			let addExp = document.getElementById('add_exp');
+			let newArea = document.querySelector('#form_exp');
+			let divelem = `
+			<div id="${counter}">
+			<div class="first-line">
+							<div class="first-line-inner">
+								<label for="job_title">Должность</label>
+								<input type="text" id="job_title" />
+							</div>
+							<div class="first-line-inner">
+								<label for="employer">Работодатель</label>
+								<input type="text" id="employer" />
+							</div>
+						</div>
+
+						<div class="address-line-second-step">
+							<div class="second-line-inner">
+								<div class="address-line-inner-date">
+									<label for="start_date">Дата начала</label>
+									<input type="date" id="start_date" />
+								</div>
+								<div class="address-line-inner-date">
+									<label for="expiration_date">Дата окончания</label>
+									<input type="date" id="expiration_date" />
+								</div>
+							</div>
+							<div class="second-line-inner-city">
+								<div class="address-line-inner-city">
+									<label for="city_job">Город</label>
+									<input type="text" id="city_job" />
+								</div>
+							</div>
+						</div>
+
+						<div class="job-checkbox">
+							<input type="checkbox" id="vehicle1" name="vehicle1" />
+							<label for="vehicle1"> В настоящее время я работаю здесь</label>
+						</div>
+
+						<div class="bottom-job-texarea">
+							<label for="description">Описание</label>
+							<textarea
+								name="description"
+								id="description"
+								cols="30"
+								rows="10"
+							></textarea>
+						</div>
+						<hr>
+						<br>
+						</div>
+			`;
+
+			add_btn_handler.addEventListener('click', (e) => {
+				e.preventDefault();
+				newArea.insertAdjacentHTML('beforeend', divelem);
+			});
+		</script>
+	</body>
 </html>

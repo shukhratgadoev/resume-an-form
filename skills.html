@@ -5,14 +5,14 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
-		<title>Образование</title>
+		<title>Навыки</title>
 	</head>
 	<body>
 		<div class="contacts">
 			<div class="container">
 
 				<div class="header-progress">
-					<div class="header-progress-line education-line"></div>
+					<div class="header-progress-line skills-line"></div>
 					<div class="header-item">
 						<div class="header-item-title">КОНТАКТЫ</div>
 						<div class="header-item-cicle cicrcle-blue"></div>
@@ -29,7 +29,7 @@
 
 					<div class="header-item">
 						<div class="header-item-title">НАВЫКИ</div>
-						<div class="header-item-cicle"></div>
+						<div class="header-item-cicle cicrcle-blue"></div>
 					</div>
 					<div class="header-item">
 						<div class="header-item-title">ОБ</div>
@@ -41,15 +41,15 @@
 					</div>
 				</div>
 
-
+				
 				<div class="contacts-wrap">
 					<div class="contacts-title">
 						<h1><span>Пожалуйста, введите</span>  информацию о <br> вашем образовании</h1>
 						
-						
+
 						<div class="download-resume">
 							<p>
-								Сначала введите ваш последний диплом
+								Начните с того, в котором вы наиболее опытны
 							</p>
 							<a href="#">
 								<svg
@@ -76,11 +76,14 @@
 					<div class="form-wrap">
 						<form action="">
 
-							<div id="form_edu"></div>
+							<div id="form_skills"></div>
 
 
-							<div class="add-exp-btn" id="add_edu">
-								<button class="add_btn_edu">
+							
+
+
+							<div class="add-exp-btn" id="add_skills">
+								<button class="add_btn_skills">
 									<span>
 										<span>
 											<svg
@@ -98,14 +101,14 @@
 												</g>
 											</svg>
 										</span>
-										<span>Добавить Образование</span>
+										<span>Добавить Навык</span>
 									</span>
 								</button>
 							</div>
 
 
 							<div class="form-btn">
-								<input type="submit" value="Перейти к Навыки" />
+								<input type="submit" value="Перейти к ОБ" />
 							</div>
 						</form>
 					</div>
@@ -115,46 +118,24 @@
 
 		<script>
 			let counter =+ 1;
-			let add_btn_handler = document.querySelector('.add_btn_edu');
-			let addExp = document.getElementById('add_edu');
-			let newArea = document.querySelector('#form_edu');
+			let add_btn_handler = document.querySelector('.add_btn_skills');
+			let addExp = document.getElementById('add_skills');
+			let newArea = document.querySelector('#form_skills');
 			let divelem = `
 			<div id="${counter}">
 				<div class="first-line">
 								<div class="first-line-inner">
-									<label for="school">Школа</label>
+									<label for="school">Навык</label>
 									<input type="text" id="school" />
 								</div>
 								<div class="first-line-inner">
-									<label for="degree">Степень</label>
+									<label for="degree">Уровень</label>
 									<select type="text" id="degree">
 										<option value=""></option>
-										<option value="bachelor">Бакалавр</option>
+										<option value="newbie">новичок</option>
+										<option value="newbie">начинающий</option>
 									</select>
 								</div>
-							</div>
-
-							<div class="address-line-second-step">
-								<div class="address-line-inner-date exp-date">
-									<label for="expiration_date">Дата окончания</label>
-									<input type="date" id="expiration_date" />
-								</div>
-								<div class="second-line-inner-city">
-									<div class="address-line-inner-city">
-										<label for="city_job">Город</label>
-										<input type="text" id="city_job" />
-									</div>
-								</div>
-							</div>
-
-							<div class="bottom-job-texarea">
-								<label for="description">Описание</label>
-								<textarea
-									name="description"
-									id="description"
-									cols="30"
-									rows="10"
-								></textarea>
 							</div>
 						<hr>
 						<br>
